@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwissDeductions.UI.Pages.UserInfo">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwissDeductions.UI.Pages.UserInfo"
+             Title="User Info">
     <StackLayout>
-        <Label Text="   User Info"/>
-        <Entry Placeholder="Name"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Name" HorizontalOptions="Start"/>
+            <Entry Text="{Binding Name}" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Filing Married" HorizontalOptions="Start"/>
+            <Switch IsEnabled="{Binding IsFilingMarried}" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
         <Picker x:Name="picker" Title="Select a year">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -14,7 +23,18 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-        <Button Clicked="Handle_Clicked" 
+
+        <Picker x:Name="StatePicker" Title="Select a State">
+            <Picker.ItemsSource>
+                <x:Array Type="{Binding State}">
+                    <x:String>Utah</x:String>
+                    <x:String>New Mexico</x:String>
+                    <x:String>Nebraska</x:String>
+                    <x:String>Oaklahoma</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Button Command="{Binding Next}" 
                 Text="Next"/>
      </StackLayout>
 </ContentPage>

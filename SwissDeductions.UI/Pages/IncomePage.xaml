@@ -22,7 +22,7 @@
         
         <Entry Placeholder="Annual Income"/>
 
-        <Button Clicked="Handle_Clicked"
+        <Button Command="{Binding LoginCommand}"
                 Text="Next"/>
     </StackLayout>
 </ContentPage>
