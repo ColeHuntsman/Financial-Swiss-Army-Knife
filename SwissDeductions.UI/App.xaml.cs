@@ -27,48 +27,56 @@ namespace SwissDeductions.UI
         }
         public void ShowUserInfoPage()
         {
-            var userPage = FreshPageModelResolver.ResolvePageModel<UserInfoPageModel>();
-            SetMainPage(userPage);
+            var Page = FreshPageModelResolver.ResolvePageModel<UserInfoPageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowWelcomePage()
         {
-            MainPage = new WelcomePage();
+            var Page = FreshPageModelResolver.ResolvePageModel<WelcomePageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowIncomePage()
         {
-            MainPage = new IncomePage();
+            var Page = FreshPageModelResolver.ResolvePageModel<IncomePageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowDependantPage()
         {
-            MainPage = new DependantPage();
+            var Page = FreshPageModelResolver.ResolvePageModel<DependantPageModel>();
+            SetMainPage(Page); 
         }
 
         public void ShowDissabilityPage()
         {
-            MainPage = new DissabilityPage();
+            var Page = FreshPageModelResolver.ResolvePageModel<DissabilityPageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowHomeOwnerPage()
         {
-            MainPage = new HomeOwnerPage();
+            var Page = FreshPageModelResolver.ResolvePageModel<HomeOwnerPageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowDonationsPage()
         {
-            MainPage = new DonationsPage();
+            var Page = FreshPageModelResolver.ResolvePageModel<DonationsPageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowLastStepPage()
         {
-            MainPage = new LastStepPage();
+            var Page = FreshPageModelResolver.ResolvePageModel<LastStepPageModel>();
+            SetMainPage(Page);
         }
 
         public void ShowFinalDeductablePage()
         {
-            MainPage = new FinalDeductablePage();
+            var Page = FreshPageModelResolver.ResolvePageModel<FinalDeductablePageModel>();
+            SetMainPage(Page);
         }
         void SetMainPage (Page homePage)
         {

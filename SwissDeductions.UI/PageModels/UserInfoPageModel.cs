@@ -7,7 +7,7 @@ namespace SwissDeductions.UI.PageModels
 {
     class UserInfoPageModel : BasePageModel
     {
-        public Command LoginCommand => new Command(() => App.Current.ShowWelcomePage());
+        public Command Next => new Command(() => App.Current.ShowWelcomePage());
 
         public string Name { get; set; }
 

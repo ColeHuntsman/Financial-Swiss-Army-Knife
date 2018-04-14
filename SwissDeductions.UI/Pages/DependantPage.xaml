@@ -3,7 +3,7 @@
 <StackLayout>        
         <Label Text="How many dependants do you have?"/>
         <Entry Placeholder="Leave blank if none"/>
-        <Button Clicked="Handle_Clicked"
+        <Button Command="{Binding Next}"
             Text="Next"/>
 </StackLayout>
 </ContentPage>

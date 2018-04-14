@@ -11,10 +11,5 @@ namespace SwissDeductions.UI.Pages
         {
             InitializeComponent();
         }
-
-        public void Handle_Clicked(object sender, EventArgs e)
-        {
-            App.Current.ShowIncomePage();
-        }
     }
 }

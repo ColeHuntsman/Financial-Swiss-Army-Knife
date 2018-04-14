@@ -21,8 +21,10 @@
         </Picker>
         
         <Entry Placeholder="Annual Income"/>
+        
+        
 
-        <Button Command="{Binding LoginCommand}"
+        <Button Command="{Binding Next}"
                 Text="Next"/>
     </StackLayout>
 </ContentPage>

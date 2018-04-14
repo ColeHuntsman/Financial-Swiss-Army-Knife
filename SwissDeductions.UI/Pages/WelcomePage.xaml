@@ -10,7 +10,7 @@
         <Label FontSize="12"
                Text="lets get started..."/>
 
-        <Button Command="{Binding LoginCommand}"
+        <Button Command="{Binding Next}"
                 Text="Next"/>
         
     </StackLayout>

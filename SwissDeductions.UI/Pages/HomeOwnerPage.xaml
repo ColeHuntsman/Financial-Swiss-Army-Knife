@@ -7,7 +7,7 @@
             </StackLayout>
             <Label Text="How much is the property currently worth?"/>
             <Entry Placeholder="$"/>
-        <Button Command="{Binding LoginCommand}"
+        <Button Command="{Binding Next}"
                 Text="Enter"/>
     </StackLayout>
 </ContentPage>
