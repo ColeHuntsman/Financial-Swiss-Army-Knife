@@ -4,9 +4,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SwissDeductions.UI.Pages.IncomePage">
     
-    <StackLayout>
-        <Label FontSize="35"
-               Text="What is your gross annual income for year "/>
+    <StackLayout Padding="20,20,20,20">
+        <Label FontSize="20"
+               Text="What is your gross annual income for year... "/>
 
         <Picker x:Name="picker" Title="Select a year">
             <Picker.ItemsSource>

@@ -4,15 +4,15 @@
              x:Class="SwissDeductions.UI.Pages.UserInfoPage"
              Title="User Info">
     <StackLayout>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Padding="10,10,0,0" Orientation="Horizontal">
             <Label Text="Name" HorizontalOptions="Start"/>
             <Entry Text="{Binding Name}" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Padding="10,0,10,0" Orientation="Horizontal">
             <Label Text="Filing Married" HorizontalOptions="Start"/>
             <Switch IsToggled="{Binding IsFilingMarried}" HorizontalOptions="EndAndExpand"/>
         </StackLayout>
-        <Picker x:Name="picker" Title="Select a year">
+        <Picker x:Name="picker" Title="Select a Year">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>2018</x:String>
