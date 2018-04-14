@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="SwissDeductions.UI.Pages.DonationsPage">
+    
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Did you donate this year?" HorizontalOptions="Start"/>
+            <Switch HorizontalOptions="End"/>   
+        </StackLayout>
+            <Label Text="If so, how much?"/>
+            <Entry Placeholder="$"/>
+        <Button Clicked="Handle_Clicked"
+                Text="Enter"/>
+    </StackLayout>
+</ContentPage>
