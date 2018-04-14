@@ -5,16 +5,16 @@ using Xamarin.Forms;
 
 namespace SwissDeductions.Views
 {
-    public partial class DonationsPage : ContentPage
+    public partial class LastStepPage : ContentPage
     {
-        public DonationsPage()
+        public LastStepPage()
         {
             InitializeComponent();
         }
 
-        public void Handle_Clicked(object sender, EventArgs e)
+        void Handle_Clicked(object sender, System.EventArgs e)
         {
-            App.Current.ShowLastStepPage();
+            App.Current.ShowFinalDeductablePage();
         }
     }
 }

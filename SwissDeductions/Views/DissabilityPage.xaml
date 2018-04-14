@@ -7,15 +7,15 @@
                 <Switch HorizontalOptions="End"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Font="Myself"/>
+                <Label Text="Myself"/>
                 <Switch/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Font="Family under 18"/>
+                <Label Text="Family under 18"/>
                 <Switch/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Font="Family over 18"/>
+                <Label Text="Family over 18"/>
                 <Switch/>
             </StackLayout>
             <Button Clicked="Handle_Clicked"

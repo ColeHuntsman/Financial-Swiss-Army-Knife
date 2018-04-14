@@ -59,5 +59,14 @@ namespace SwissDeductions
         {
             MainPage = new DonationsPage();
         }
+
+        public void ShowLastStepPage()
+        {
+            MainPage = new LastStepPage();
+        }
+        public void ShowFinalDeductablePage()
+        {
+            MainPage = new FinalDeductablePage();
+        }
     }
 }
