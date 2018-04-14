@@ -13,86 +13,86 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\CloudDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MockDataStore.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)PageModels\AboutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PageModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\UserInfo.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\UserInfo.xaml.cs">
       <DependentUpon>UserInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\WelcomePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\IncomePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\IncomePage.xaml.cs">
       <DependentUpon>IncomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\DependantPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DependantPage.xaml.cs">
       <DependentUpon>DependantPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\DissabilityPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DissabilityPage.xaml.cs">
       <DependentUpon>DissabilityPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\HomeOwner.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HomeOwner.xaml.cs">
       <DependentUpon>HomeOwner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\DonationsPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DonationsPage.xaml.cs">
       <DependentUpon>DonationsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\LastStepPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LastStepPage.xaml.cs">
       <DependentUpon>LastStepPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\FinalDeductablePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FinalDeductablePage.xaml.cs">
       <DependentUpon>FinalDeductablePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\AboutPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\UserInfo.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\UserInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\WelcomePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\WelcomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\IncomePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\IncomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DependantPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\DependantPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DissabilityPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\DissabilityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomeOwner.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\HomeOwner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DonationsPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\DonationsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LastStepPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LastStepPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FinalDeductablePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\FinalDeductablePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

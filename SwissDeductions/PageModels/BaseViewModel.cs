@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
+using FreshMvvm;
 using Xamarin.Forms;
 
-namespace SwissDeductions
+namespace SwissDeductions.PageModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : FreshBasePageModel
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
 

@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 using Xamarin.Forms;
 
-namespace SwissDeductions
+namespace SwissDeductions.PageModels
 {
     public class AboutViewModel : BaseViewModel
     {
