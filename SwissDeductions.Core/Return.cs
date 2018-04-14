@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IUserInformation
+namespace SwissDeductions.core
 {
     public class Return
     {
-        public IPerson Filer { get; }
+        public IPerson Filer { get; set; }
         public State ReturnState { get; set; }
         public IDeductions Deductions { get; set; }
 
-        public Return(IPerson filer)
+        public Return()
         {
-            Filer = filer;            
+            Filer = new Person();
         }
-        
     }
 }

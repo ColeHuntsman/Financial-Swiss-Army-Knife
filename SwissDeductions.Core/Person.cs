@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IUserInformation
+namespace SwissDeductions.core
 {
-    class Person : IPerson
+    public class Person : IPerson
     {
         public string Name { get; set; }
 
@@ -16,22 +16,6 @@ namespace IUserInformation
                                                                                                                                                        
         public int Year { get; set; }
                                                                                   
-        public bool Single { get; set; }
-                                                                                  
-        public bool Dependants { get; set; }
-                                                                                  
-        public int NumOfDependants { get; set; }
-                                                                                  
-        public bool Disabled { get; set; }
-                                                                                  
-        public bool Over18 { get; set; }
-                                                                                  
-        public bool HomeOwner { get; set; }
-                                                                                  
-        public int PropCost { get; set; }
-                                                                                  
-        public bool Donations { get; set; }
-                                                                                  
-        public double DonationAmnt { get; set; }
+      
     }
 }

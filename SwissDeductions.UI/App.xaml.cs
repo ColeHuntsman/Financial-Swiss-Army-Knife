@@ -3,23 +3,31 @@ using SwissDeductions.UI.Pages;
 using FreshMvvm;
 using Xamarin.Forms;
 using SwissDeductions.UI.PageModels;
+using SwissDeductions.UI.Helpers;
+using SwissDeductions.core;
 
 namespace SwissDeductions.UI
 {
     public partial class App : Application
     {
-
+        readonly ILocalSettings settings;
         public new static App Current => (App)Xamarin.Forms.Application.Current;
 
         public App()
         {
             InitializeComponent();
+            RegisterIoC();
+            settings = FreshIOC.Container.Resolve<ILocalSettings>();
+
+            if (settings.CurrentReturn == null)
+                settings.CurrentReturn = new Return();
 
             // if (Device.RuntimePlatform == Device.iOS)
             ShowLoginPage();
             //else
             //    MainPage = new NavigationPage(new MainPage());
         }
+
         public void ShowLoginPage()
         {
             var loginRoot = FreshPageModelResolver.ResolvePageModel<LoginPageModel>();
@@ -84,6 +92,12 @@ namespace SwissDeductions.UI
             {
 
             };
+        }
+
+        void RegisterIoC()
+        {
+            var container = FreshIOC.Container;
+            container.Register<ILocalSettings>(new Settings());
         }
     }
 }

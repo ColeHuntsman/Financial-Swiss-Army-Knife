@@ -18,7 +18,7 @@
                 <Label Text="Family over 18"/>
                 <Switch/>
             </StackLayout>
-            <Button Clicked="Handle_Clicked"
+            <Button Command="{Binding Next}"
                     Text="Enter"/>
         </StackLayout>
     </ContentPage.Content>

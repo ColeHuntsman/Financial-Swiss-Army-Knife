@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IUserInformation
+namespace SwissDeductions.core
 {
-    class Deductions : IDeductions
+    public class Deductions : IDeductions
     {
         public bool Single { get; set; }
 

@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 using SwissDeductions.UI;
 using Acr.UserDialogs;
+using FreshMvvm;
 
 namespace SwissDeductions.Droid
 {
@@ -21,6 +22,7 @@ namespace SwissDeductions.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+            RegisterIoC();
             UserDialogs.Init(this);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
@@ -31,6 +33,11 @@ namespace SwissDeductions.Droid
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
+        }
+
+        void RegisterIoC ()
+        {
+            var container = FreshIOC.Container;
         }
     }
 }

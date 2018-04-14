@@ -6,7 +6,7 @@
     <StackLayout>
         <StackLayout Orientation="Horizontal">
             <Label Text="Name" HorizontalOptions="Start"/>
-            <Entry Text="{Binding Name}" HorizontalOptions="EndAndExpand"/>
+            <Entry Text="{Binding Name}" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
             <Label Text="Filing Married" HorizontalOptions="Start"/>

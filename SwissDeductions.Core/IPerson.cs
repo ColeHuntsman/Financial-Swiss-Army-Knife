@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IUserInformation
+namespace SwissDeductions.core
 {
     public interface IPerson
     {
-        string Name { get; }
+        string Name { get; set; }
         DateTime Birthday { get; }
         string SocialSecurityNumber { get; }
         double GrossIncome { get; }

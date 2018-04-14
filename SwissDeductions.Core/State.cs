@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IUserInformation
+namespace SwissDeductions.core
 {
     public abstract class State
     {

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IUserInformation
+namespace SwissDeductions.core
 {
     public interface IDeductions
     {
-        bool Single { get; }
+        bool Single { get; set; }
         int NumOfDependants { get; }
         bool Disabled { get; }
         bool Over18 { get; }
