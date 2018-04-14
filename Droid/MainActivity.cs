@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using SwissDeductions.UI;
+using Acr.UserDialogs;
 
 namespace SwissDeductions.Droid
 {
@@ -20,6 +21,7 @@ namespace SwissDeductions.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+            UserDialogs.Init(this);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 

@@ -7,12 +7,12 @@
         <Label FontSize="30"
                Text="SWISS"/>
 
-        <Entry Placeholder="username"/>
+        <Entry Placeholder="Email" Text="{Binding Email}"/>
 
         <Entry Placeholder="password"
-               IsPassword="true"/>
+               IsPassword="true" Text="{Binding Password}"/>
 
-        <Button Clicked="Handle_Clicked"
+        <Button Command="{Binding LoginCommand}"
                 Text="Enter"/>
 
     </StackLayout>

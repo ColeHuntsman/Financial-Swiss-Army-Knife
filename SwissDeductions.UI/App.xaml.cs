@@ -1,13 +1,13 @@
 ﻿using System;
 using SwissDeductions.UI.Pages;
+using FreshMvvm;
 using Xamarin.Forms;
+using SwissDeductions.UI.PageModels;
 
 namespace SwissDeductions.UI
 {
     public partial class App : Application
     {
-        public static bool UseMockDataStore = true;
-        public static string BackendUrl = "https://localhost:5000";
 
         public new static App Current => (App)Xamarin.Forms.Application.Current;
 
@@ -16,14 +16,19 @@ namespace SwissDeductions.UI
             InitializeComponent();
 
             // if (Device.RuntimePlatform == Device.iOS)
-            MainPage = new LoginPage();
+            ShowLoginPage();
             //else
             //    MainPage = new NavigationPage(new MainPage());
         }
-
+        public void ShowLoginPage()
+        {
+            var loginRoot = FreshPageModelResolver.ResolvePageModel<LoginPageModel>();
+            SetMainPage(loginRoot);
+        }
         public void ShowUserInfoPage()
         {
-            MainPage = new UserInfo();
+            var userPage = FreshPageModelResolver.ResolvePageModel<UserInfoPageModel>();
+            SetMainPage(userPage);
 
         }
         public void ShowWelcomePage()
@@ -64,6 +69,13 @@ namespace SwissDeductions.UI
         public void ShowFinalDeductablePage()
         {
             MainPage = new FinalDeductablePage();
+        }
+        void SetMainPage (Page homePage)
+        {
+            MainPage = new FreshNavigationContainer(homePage)
+            {
+
+            };
         }
     }
 }
