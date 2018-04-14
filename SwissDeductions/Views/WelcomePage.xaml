@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwissDeductions.Views.WelcomePage">
-    <ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwissDeductions.Views.WelcomePage">
+    
+    <StackLayout>
         <Label FontSize="50"
-            Text="Welcome"/>
+               Text="Welcome"/>
+        
         <Label FontSize="12"
-            Text="lets get started..."/>
+               Text="lets get started..."/>
+        
         <Button Clicked="Handle_Clicked"
-        Text="Next"/>
-    </ContentPage.Content>
+                Text="Next"/>
+        
+    </StackLayout>
 </ContentPage>

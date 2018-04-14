@@ -43,16 +43,18 @@ namespace SwissDeductions
         public void ShowDependantPage()
         {
             MainPage = new DependantPage();
-
         }
+
         public void ShowDissabilityPage()
         {
             MainPage = new DissabilityPage();
         }
+
         public void ShowHomeOwnerPage()
         {
             MainPage = new HomeOwner();
         }
+
         public void ShowDonationsPage()
         {
             MainPage = new DonationsPage();

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwissDeductions.Views.IncomePage">
-    <ContentPage.Content>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SwissDeductions.Views.IncomePage">
+    
+    <StackLayout>
         <Label FontSize="35"
-        Text="What is your gross annual income for year "/>
+               Text="What is your gross annual income for year "/>
+
         <Picker x:Name="picker" Title="Select a year">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -14,8 +19,10 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        
         <Entry Placeholder="Annual Income"/>
+
         <Button Clicked="Handle_Clicked"
-        Text="Next"/>
-    </ContentPage.Content>
+                Text="Next"/>
+    </StackLayout>
 </ContentPage>
