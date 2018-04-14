@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace SwissDeductions.UI.Pages
 {
-    public partial class UserInfo : ContentPage
+    public partial class UserInfoPage : ContentPage
     {
-        public UserInfo()
+        public UserInfoPage()
         {
             InitializeComponent();
         }

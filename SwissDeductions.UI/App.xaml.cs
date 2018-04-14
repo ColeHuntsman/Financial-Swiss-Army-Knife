@@ -29,8 +29,8 @@ namespace SwissDeductions.UI
         {
             var userPage = FreshPageModelResolver.ResolvePageModel<UserInfoPageModel>();
             SetMainPage(userPage);
-
         }
+
         public void ShowWelcomePage()
         {
             MainPage = new WelcomePage();

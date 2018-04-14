@@ -8,15 +8,9 @@ namespace SwissDeductions.UI.PageModels
 {
     class LoginPageModel : BasePageModel
     {
-        public Command LoginCommand => new Command(async () => await Login());
+        public Command LoginCommand => new Command(() => App.Current.ShowUserInfoPage());
 
         public string Email { get; set; }
         public string Password { get; set; }
-
-        async Task Login ()
-        {
-            IsBusy = true;
-            App.Current.ShowUserInfoPage();
-        }
     }
 }

@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace SwissDeductions
 {
-    public class AboutPageModel : BasePageModel
+    class AboutPageModel : BasePageModel
     {
         public AboutPageModel()
         {

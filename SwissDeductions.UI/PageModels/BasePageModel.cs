@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace SwissDeductions
 {
-    public class BasePageModel : FreshBasePageModel
+    class BasePageModel : FreshBasePageModel
     {
         protected string PageName => GetType().Name.Replace("PageModel", " ");
 
