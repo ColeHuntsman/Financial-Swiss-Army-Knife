@@ -33,6 +33,9 @@ namespace SwissDeductions.UI.PageModels
             if (currentReturn.Filer == null)
                 currentReturn.Filer = new Person();
 
+            if (currentReturn.ReturnState == null)
+                currentReturn.ReturnState = new Utah();
+
             if (currentReturn.Deductions == null)
                 currentReturn.Deductions = new Deductions();
         }

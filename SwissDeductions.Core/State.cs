@@ -8,30 +8,23 @@ namespace SwissDeductions.core
         double incomeTax;
         double propTax;
 
-        protected State(string name, double iTax, double pTax)
+        protected State(string name, double iTax)
         {
             state = name;
             incomeTax = iTax;
-            propTax = pTax;
+            
             
         }
-        public virtual double taxIncome(double a, double b)
+        public virtual double taxIncome(double a)
         {
 
             double grossIncome = a;
-            double answer = grossIncome - (a * b);
+            double answer = grossIncome - (a * incomeTax);
 
             return (answer);
         }
 
-        public virtual double taxProp(double a, double b)
-        {
-
-            double grossIncome = a;
-            double answer = grossIncome - (a * b);
-
-            return (answer);
-        }
+        
 
     }
 }

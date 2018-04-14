@@ -28,9 +28,6 @@
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Utah</x:String>
-                    <x:String>New Mexico</x:String>
-                    <x:String>Nebraska</x:String>
-                    <x:String>Oaklahoma</x:String>
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>

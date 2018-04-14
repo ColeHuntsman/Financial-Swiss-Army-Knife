@@ -6,5 +6,6 @@ namespace SwissDeductions.UI.PageModels
 {
     class LastStepPageModel : BasePageModel
     {
+        
     }
 }

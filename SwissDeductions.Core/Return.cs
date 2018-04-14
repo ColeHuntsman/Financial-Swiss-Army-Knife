@@ -6,13 +6,17 @@ namespace SwissDeductions.core
 {
     public class Return
     {
-        public IPerson Filer { get; set; }
-        public State ReturnState { get; set; }
-        public IDeductions Deductions { get; set; }
+        public Person Filer { get; set; }
+        public Utah ReturnState { get; set; }
+        public Deductions Deductions { get; set; }
+        public string AnualIncome { get; set; }
+        public string GrossIncome { get; set; }
+
 
         public Return()
         {
             Filer = new Person();
+
         }
     }
 }

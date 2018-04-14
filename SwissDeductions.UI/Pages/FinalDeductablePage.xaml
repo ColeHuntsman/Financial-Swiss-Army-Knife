@@ -3,5 +3,6 @@
     <StackLayout>
         <Label FontSize="50" 
             Text="Congrats! Your Deductable is "/>
+        <Label FontSize="30" Text="{Binding Deductable}"/>
     </StackLayout>
 </ContentPage>
